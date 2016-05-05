@@ -1,65 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Workout log</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='css/style.css' rel='stylesheet' type='text/css'>
-        <script src="js/workout.js" type="text/javascript" ></script>
-    </head>
-    <body>
-        <div class="center">
-            <header class="text-center">
-                <h1>Workout Log</h1>
-            </header>
-            <section>
-                <form>
-                    <fieldset>
-                        <legend>Insert an Item</legend>
+   <head>
+      <title>Workout log</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <meta name="description" content="This is a simple Workout log created using the pure HTML5,CSS3 and of course, vanilla JS.">
+      <link href="img/favicon.png" rel="shortcut icon" type="image/png"/>
+      <link href='css/style.css' rel='stylesheet' type='text/css'>
+   </head>
+   <body>
+      <div class="center">
 
-                        <label for="timeSpend">Time:</label>
-                        <input type="text" id="timeSpend" placeholder="Time spend" autofocus>
+         <header class="text-center">
+            <br><img class="perfil" src="img/logo.png" alt="perfil"><br>
+         </header>
+         <section>
+            <form id="Form">
+               <fieldset>
+                  <legend>New Item</legend>
+                  <label for="Time">Time:</label>
+                  <input type="text" id="Time" name="Time" placeholder="Time spend" pattern="[0-9]{1,2}" autofocus required>
+                  <label for="Type">Action:</label>
+                  <select id="Type" name="Type" required>
+                     <option value=""></option>
+                     <option>Run</option>
+                     <option>Swimming</option>
+                     <option>Bike</option>
+                  </select>
+                  <label for="Date">Date:</label>
+                  <input type="text" id="Date"  name="Date" placeholder="dd/mm/aaaa"  pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d" required>
+                  <button type="submit" class="add">Add</button>
+               </fieldset>
+            </form>
+         </section>
 
-                        <label for="action">Action:</label>
-                        <select id="action" name="action">
-                            <option>Run</option>
-                            <option>Swimming</option>
-                            <option>Bike</option>
-                        </select>
+         <section>
+            <fieldset>
+               <legend>Data</legend>
+               <table id="Table">
+                  <thead>
+                     <tr>
+                        <th>Time &#x21F5;</th>
+                        <th>Type &#x21F5;</th>
+                        <th>Date &#x21F5;</th>
+                        <th>Action</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+               </table>
+            </fieldset>
+         </section>
 
-                        <label for="date">Date:</label>
-                        <input type="text" id="date" placeholder="Your Date">
+         <section id="resultTotalHours"></section>
 
-                        <button type="submit" class="btn-success">Add</button>
-                    </fieldset>
-                </form>
-            </section>
-
-            <section>
-                <fieldset>
-                    <legend>Data</legend>
-                    <table>
-                        <tr>
-                            <th>Tempo</th>
-                            <th>Tipo</th>
-                            <th>Date</th>
-                            <th>Action</th>
-                        </tr>
-                        <tr>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                        </tr>
-                        <tr>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                            <td>Cell</td>
-                        </tr>
-                    </table>
-                </fieldset>
-            </section>
-        </div>
-    </body>
+      </div>
+      <script src="js/util.js" type="text/javascript" ></script>
+      <script src="js/workout.js" type="text/javascript" ></script>
+   </body>
 </html>
