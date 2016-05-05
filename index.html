@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Workout log</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='css/style.css' rel='stylesheet' type='text/css'>
+        <script src="js/workout.js" type="text/javascript" ></script>
+    </head>
+    <body>
+        <div class="center">
+            <header class="text-center">
+                <h1>Workout Log</h1>
+            </header>
+            <section>
+                <form>
+                    <fieldset>
+                        <legend>Insert an Item</legend>
+
+                        <label for="timeSpend">Time:</label>
+                        <input type="text" id="timeSpend" placeholder="Time spend" autofocus>
+
+                        <label for="action">Action:</label>
+                        <select id="action" name="action">
+                            <option>Run</option>
+                            <option>Swimming</option>
+                            <option>Bike</option>
+                        </select>
+
+                        <label for="date">Date:</label>
+                        <input type="text" id="date" placeholder="Your Date">
+
+                        <button type="submit" class="btn-success">Add</button>
+                    </fieldset>
+                </form>
+            </section>
+
+            <section>
+                <fieldset>
+                    <legend>Data</legend>
+                    <table>
+                        <tr>
+                            <th>Tempo</th>
+                            <th>Tipo</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                        </tr>
+                        <tr>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </section>
+        </div>
+    </body>
+</html>
