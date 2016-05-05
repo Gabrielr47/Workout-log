@@ -1,61 +1,76 @@
 fieldset,table,hr,tr,th,td,select{
-    border: 1px solid #dcdcdd; 
+   border: 1px solid #9f9f9f;
 }
 
 .center {
-    width: 768px;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+   display: table;
+   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+   input,select,button {
+      margin: 5px;
+      width: 90%;
+   }
+}
+
+.perfil{
+   max-width: 400px;
+   max-height: 100px;
+   width: 100%;
+   height: auto;
 }
 
 .text-center{
-    text-align: center;
+   text-align: center;
 }
 
 table {
-    border-collapse: collapse;
-    width: 100%;
+   border-collapse: collapse;
+   text-align: center;
+   width: 100%;
 }
 
 th {
-    height: 25px;
+   height: 25px;
 }
 
+tbody tr:nth-child(odd) {
+   background-color: #dcdcdd;
+}
 section{
-    margin-bottom: 10px;
+   margin-bottom: 10px;
 }
 
-select {
-    padding: 5px 10px;
-    margin-right: 10px;
+input,select {
+   padding: 4px 10px;
+   margin-right: 10px;
+   -ms-box-sizing:content-box;
+   -moz-box-sizing:content-box;
+   box-sizing:content-box;
+   -webkit-box-sizing:content-box;
 }
 
-input {
-    padding: 4px 10px;
-    margin-right: 10px;
+.add {
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   padding: 5px 50px;
+   cursor: pointer;
+   border-radius: 20px;
 }
 
-.btn-success {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 5px 50px;
-    font-size: 16px;
-    cursor: pointer;
+.delete {
+   background-color: #e63946;
+   opacity: 0.7;
+   border: none;
+   color: white;
+   padding: 4px 9px;
+   border-radius: 20px;
+   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .center {
-        width: 500px;
-    }
+.delete:hover{
+   opacity: 1;
 }
 
-@media (max-width: 500px) {
-    .center {
-        width: 300px;
-    }
-}
+
