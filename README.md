@@ -3,7 +3,7 @@
 Workout log using HTML 5, CSS 3 and JS.
 
 
-Features:
+## Features:
 
 * A place to insert workout items.
 * A table with the items.
@@ -21,10 +21,10 @@ You should provide a workout log that works looks this mock, but remmember this 
 
 ## Preview
 
-## Firefox on Macbook
+Firefox on Macbook
 
 ![Just a simple preview](http://i.imgur.com/VBOsBCu.png)
 
-## Safari on Iphone
+Safari on Iphone
 
 ![Just a simple preview](http://i.imgur.com/jxxkzPX.png)
