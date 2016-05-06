@@ -1,4 +1,5 @@
 ![Just a simple preview](http://i.imgur.com/wykw4R5.png)
+
 Workout log using HTML 5, CSS 3 and JS.
 
 
