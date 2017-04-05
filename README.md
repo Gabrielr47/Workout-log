@@ -25,6 +25,3 @@ Firefox on Macbook
 
 ![Just a simple preview](http://i.imgur.com/VBOsBCu.png)
 
-Safari on Iphone
-
-![Just a simple preview](http://i.imgur.com/jxxkzPX.png)
